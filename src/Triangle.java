@@ -33,7 +33,7 @@ public class Triangle {
         return P;
     }
 
-    public void form() {
+    public void type() {
         if (length3 == Math.sqrt(Math.pow(length1, 2) + Math.pow(length2, 2))) {
             name = "rectangular";
         } else if (length2 == Math.sqrt(Math.pow(length1, 2) + Math.pow(length3, 2))) {
