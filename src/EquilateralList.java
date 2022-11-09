@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class EquilateralList extends TriangleList {
 
-    private ArrayList<Triangle> equilateralList = new ArrayList<>();
+    private final ArrayList<Triangle> equilateralList = new ArrayList<>();
 
     public EquilateralList() {
         for (Triangle triangle : super.sortTriangles) {

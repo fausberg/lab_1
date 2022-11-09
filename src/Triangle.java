@@ -23,18 +23,17 @@ public class Triangle {
         error(x1, y1, x2, y2, x3, y3);
     }
 
-    public double square() {
-        p = perimetr()/2;
+    public void square() {
+        p = perimeter()/2;
         S = Math.sqrt(p * (p - length1) * (p - length2) * (p * length3));
-        return S;
     }
 
-    public double perimetr() {
+    public double perimeter() {
         P = length1 + length2 + length3;
         return P;
     }
 
-    public void viev() {
+    public void form() {
         if (length3 == Math.sqrt(Math.pow(length1, 2) + Math.pow(length2, 2))) {
             name = "rectangular";
         } else if (length2 == Math.sqrt(Math.pow(length1, 2) + Math.pow(length3, 2))) {
@@ -74,7 +73,7 @@ public class Triangle {
         } else if (x1 == x2 && y1 == y2 || x2 == x3 && y2 == y3 || x1 == x3 && y1 == y3) {
             setName("error");
         } else {
-            viev();
+            form();
             square();
         }
     }

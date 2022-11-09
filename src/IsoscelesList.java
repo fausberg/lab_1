@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class IsoscelesList extends TriangleList {
 
-    private ArrayList<Triangle> isoscelesList = new ArrayList<>();
+    private final ArrayList<Triangle> isoscelesList = new ArrayList<>();
 
     public IsoscelesList() {
         for (Triangle triangle : super.sortTriangles) {

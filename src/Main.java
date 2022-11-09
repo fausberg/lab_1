@@ -8,7 +8,7 @@ public class Main {
         EquilateralList equilateralList = new EquilateralList();
         IsoscelesList isoscelesList = new IsoscelesList();
         DefaultList defaultList = new DefaultList();
-        RectungleList rectungleList = new RectungleList();
+        RectangularList rectungleList = new RectangularList();
 
         equilateralList.info();
         System.out.println();

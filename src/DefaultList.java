@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class DefaultList extends TriangleList {
 
-    private ArrayList<Triangle> defaultList = new ArrayList<>();
+    private final ArrayList<Triangle> defaultList = new ArrayList<>();
 
     public DefaultList() {
         for (Triangle triangle : super.sortTriangles) {

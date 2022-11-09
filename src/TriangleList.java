@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class TriangleList {
-    private ArrayList<Triangle> triangles = new ArrayList<>();
+    private final ArrayList<Triangle> triangles = new ArrayList<>();
 
     protected ArrayList<Triangle> sortTriangles = new ArrayList<>();
-    private ArrayList<String> name = new ArrayList<>();
+    private final ArrayList<String> name = new ArrayList<>();
 
     public TriangleList() {
         this.triangles.add(new Triangle(-1, 0, 0, 4, 1, 0));
@@ -32,7 +32,7 @@ public class TriangleList {
         int n = 0;
         while (n < name.size()) {
             for (Triangle triangle : triangles) {
-                if (triangle.getName() == name.get(n)) {
+                if (triangle.getName().equalsIgnoreCase(name.get(n))) {
                     sortTriangles.add(triangle);
                     triangle.setName("check: " + triangle.getName());
                     n++;
